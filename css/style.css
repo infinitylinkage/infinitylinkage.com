@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191919;
+}
+
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.55rem 0 !important;
+  z-index: 1;
+}
+
+.bg-dark {
+  background-color: #191919 !important;
+}
+
+.logo {
+  color: #fff;
+  padding-top: 0.1rem;
+}
+.logo h5 {
+  margin: 0;
+  margin-bottom: -0.3rem;
+}
+.logo:hover {
+  color: #5B4DFF;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.8rem 0.1rem;
+  margin-inline: 0.5rem;
+}
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 3s ease-in;
+}
+.nav-link:focus {
+  color: #5B4DFF;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../imgs/menu.svg);
+}
+
+.hero {
+  margin-top: 1.9rem;
+  width: 100%;
+  position: relative;
+  background: url(/imgs/hero-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.hero .container {
+  position: relative;
+}
+.hero .title {
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #fff;
+}
+.hero .sub-title {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.hero .hero-team {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100);
+  transition: all 1s ease-in;
+}
+.hero .hero-team:hover {
+  filter: none;
+}
+.hero .container {
+  z-index: 111;
+}
+.hero .container .row .col {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.btn-hover:hover {
+  background-color: transparent;
+  border: 1px solid #2e68ff;
+  color: #2e68ff;
+}
+
+.aboutus {
+  background: url(/imgs/about-us.png) no-repeat center center;
+  background-size: cover;
+}
+.aboutus #aboutus, .aboutus .lead {
+  color: #fff !important;
+}
+.aboutus .laptop-hover {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.services {
+  padding: 3rem 0;
+  color: #fff;
+  background: url(/imgs/service-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.services .service-cards {
+  margin-top: 5rem !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .service-cards .card {
+  padding: 2rem;
+  width: 21rem;
+  border: none;
+  margin: auto;
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0;
+  margin-bottom: 2rem;
+  transition: all ease-in 200ms;
+}
+.services .service-cards .card:hover {
+  transform: scale(1.025);
+}
+.services .service-cards .card h4 {
+  color: #fff;
+  font-weight: 600;
+}
+.services .service-cards .card img {
+  margin: 1rem -0.5rem;
+  height: 50px;
+  width: 50px;
+}
+.services .service-cards .card p {
+  color: #ffffff;
+}
+.services .service-cards .card a {
+  margin-top: 1rem;
+  color: #fff;
+  padding: 0;
+  align-self: flex-start;
+  margin-left: 0;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+.services .service-cards .card a:visited {
+  color: #fff;
+}
+.services .service-cards .card a h6 {
+  transition: 0.2s ease-in;
+}
+.services .service-cards .card a h6:hover {
+  color: #f6ff8f;
+}
+
+.contactus {
+  background: url(/imgs/contactus.png) no-repeat center center;
+  padding-block: 3rem;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.contactus h1 {
+  color: #fff;
+}
+.contactus .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cform {
+  height: 560px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
+}
+
+.clients .container {
+  padding: 1.7rem 0rem;
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0;
+  color: #fff !important;
+}
+
+.card-body {
+  padding: 1.7rem 0rem;
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(114, 114, 114, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0;
+  color: #fff !important;
+}
+
+label {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+input, textarea {
+  backdrop-filter: blur(24px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(200%) !important;
+  background-color: rgba(114, 114, 114, 0.14) !important;
+  border: 1px solid rgba(255, 255, 255, 0.125) !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+}
+
+footer {
+  color: #fff;
+}
+
+.footer {
+  background: url(/imgs/footer.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 25rem !important;
+  }
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contactus h1 {
+    text-align: center;
+  }
+  .ourservices, .servicetag {
+    text-align: center;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .card {
+    width: 19rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .service-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .blob1, .blob2 {
+    height: 500px;
+    width: auto;
+  }
+  .blob1 {
+    top: 0rem;
+    left: -2rem;
+  }
+  .blob2 {
+    bottom: 0rem;
+    right: -2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .jocod {
+    font-size: 1.04rem;
+  }
+  .footer li {
+    display: flex;
+    justify-content: center;
+  }
+  .lead {
+    font-size: 1.12rem;
+  }
+  .aboutus .container .row {
+    text-align: center;
+  }
+  .hero .title {
+    font-size: 2.2rem;
+  }
+  .hero .sub-title {
+    font-size: 1rem;
+  }
+  .card {
+    width: 18rem !important;
+  }
+  .service-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .footer {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
