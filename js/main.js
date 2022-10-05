@@ -4,17 +4,6 @@ let fullYear = d.getFullYear()
 year.innerText = fullYear
 
 
-let api = process.env.API_KEY
-fetch(api, {
-  method: POST,
-}).then(
-  res => res.json()
-)
-.then(data => {
-  data = data[0]
-})
-
-
 // function scrollToDiv(id){
 //   // console.log(id)
 //   var element = document.getElementById(id);
