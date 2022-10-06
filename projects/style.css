@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:target {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191919;
+}
+
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.55rem 0 !important;
+  z-index: 1;
+}
+
+.bg-dark {
+  background-color: #191919 !important;
+  box-shadow: 0 3px 3px -2px rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  color: #fff;
+  padding-top: 0.1rem;
+}
+.logo h5 {
+  margin: 0;
+  margin-bottom: -0.3rem;
+}
+.logo:hover {
+  color: #5B4DFF;
+}
+
+.projects {
+  margin-top: 5.5rem;
+  color: #fff !important;
+}
+.projects .project-title {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.8rem 0.1rem;
+  margin-inline: 0.5rem;
+}
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 3s ease-in;
+}
+.nav-link:focus {
+  color: #5B4DFF;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../imgs/menu.svg);
+}
+
+footer {
+  color: #fff;
+}
+
+.footer {
+  background: url(../imgs/footer.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer li {
+    display: flex;
+    justify-content: center;
+  }
+  .footer {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
